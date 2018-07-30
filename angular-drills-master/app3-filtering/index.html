@@ -1,0 +1,22 @@
+<html ng-app="app">
+
+	<head>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+
+	<body ng-controller="mainCtrl">
+		<input placeholder="Filter list" ng-model="dataFilter">
+		<select class="input-medium" ng-options="filter.prop as filter.label for filter in filters" ng-model="dataSort"></select>
+		<div ng-repeat="person in theData | filter: dataFilter | orderBy: dataSort" class="row">
+			<div class="personData">{{person.name}}</div>
+			<div class="personData">{{person.email}}</div>
+			<div class="personData">{{person.dateEmployed}}</div>
+			<div class="personData">{{person.phone}}</div>
+		</div> Something
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+
+</html>

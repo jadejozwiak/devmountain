@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+</head>
+
+<body>
+<script>
+	var colorFlipper = true;
+	function ruffle () {
+		console.long(‘This function is running’)
+	}
+	ruffle();
+	document.getElementById(‘box’).onclick = runMe;
+</script>
+</body>
+</html>
+
+
+var animal = ['lion', 'raccoon', 'fish', 'monkey'];
+var moreAnimals = ['llama', 'rhino', 'elephant'];
+
+Original
+function loopThroughAnimals (array) {
+  for (var i = 0; i < array.length; i++) {
+    console.log('this is our animal', array[i]);
+  }
+}
+
+
+***New function
+
+function animalLogger (animalName) {
+  console.log('this is our animal', animalName);
+}
+
+****function with a callback
+
+function loopThroughAnimals (array) {
+  for (var i = 0; i <array.length; i++) {
+    animalLogger(array[i]); T
+  }
+}
+*** the above function is limited by the named function animalLogger. So what if I wanted to push the array through the function below?
+
+function altAnimalLogger (animalName) {
+  console.log('I REALLY LOVE ' + animalName + 's');
+}
+
+
+***I can't, so I need to make loopThroughAnimals able to have the function, itself, also be a variable. 
+You need to replace the specified animalLogger function with a parameter.
+NOW I CAN PASS A FUNCTION INTO THE VARIABLE cb
+
+function loopThroughAnimals (array, cb) {
+  for (var i = 0; i <array.length; i++) {
+    cb(array[i]);
+  }
+}
+
+loopThroughAnimals (moreAnimals, animalLogger);

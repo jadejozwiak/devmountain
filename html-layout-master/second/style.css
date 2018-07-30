@@ -1,0 +1,44 @@
+body {
+  margin:0;
+}
+.container {
+  height: 100vh;
+}
+.thirds {
+  width: 33%;
+  height: 100%;
+}
+.left {
+  float:left;
+}
+.center {
+  padding-left: 34%;
+}
+.right {
+  float: right;
+}
+.small-box {
+  height: 200px;
+  margin-top: -200px;
+  position: -1;
+  font-size: 24pt;
+  color: white;
+  font-family: sans-serif;
+
+}
+.center-h {
+  text-align: center;
+  padding-top: 80px;
+}
+#blue {
+  background-color: #4185DE;
+}
+#turquiose {
+  background-color: #47DFBA;
+}
+#mint {
+  background-color: #AFE57B;
+}
+#crimson {
+  background-color:#CA001A;
+}

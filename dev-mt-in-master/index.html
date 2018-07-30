@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DevMtin</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Lora|Open+Sans" rel="stylesheet"> </head>
+
+	<body ng-controller="mainCtrl">
+		<header ng-click="togglePage('landing')">DevMountain</header>
+		<main>
+			<div ng-show="signUp">
+				<div>Welcome to DevMountain Social
+					<br>Add Some Info So Friends Can Find You</div>
+				<div ng-show="signUp">
+					<form>
+						<input type="text" placeholder="Full Name" class="signUp">
+						<input type="text" placeholder="Tagline" class="signUp">
+						<input type="text" placeholder="Profile Image Url" class="signUp">
+						<input type="text" placeholder="Bio" class="signUp">
+						<button ng-click="togglePage('signUp')">Save Changes</button>
+					</form>
+				</div>
+			</div>
+			<div ng-show="landing">
+				<h1>{{profileName}}</h1>
+				<h4>{{tagline}}</h4>
+				<div>
+					<p>Magna consectetur ut occaecat ea laboris cupidatat irure velit labore incididunt ea cupidatat dolore. Dolore nostrud ut cupidatat incididunt exercitation magna reprehenderit veniam eiusmod in consectetur quis. Quis velit laborum minim nisi dolor ea minim ullamco irure laborum do cillum Lorem eu eiusmod.</p>
+					<p>Cillum id Lorem nulla consectetur ullamco proident aliqua nisi velit laborum. Excepteur adipisicing pariatur laboris ea cillum irure laboris ut in elit est. Qui ea sit amet ullamco adipisicing sint occaecat sit cillum nisi voluptate ad dolore qui.</p>
+					<p>Do mollit laborum nisi eu dolor velit elit occaecat officia. Cillum irure et excepteur sunt quis commodo aute velit tempor sit eiusmod incididunt occaecat cupidatat Lorem sint enim. Do ipsum aliqua ea elit et amet pariatur commodo laboris duis minim est incididunt.</p>
+					<p>Consequat labore eu fugiat veniam ad nulla dolore est. Voluptate non quis in sint adipisicing tempor esse velit voluptate ea. Laboris ut nisi excepteur veniam adipisicing velit sit anim fugiat dolore.</p>
+				</div>
+			</div>
+			<div ng-show="view">
+				<h2>View Friends</h2>
+				<div>
+					<p>Magna consectetur ut occaecat ea laboris cupidatat irure velit labore incididunt ea cupidatat dolore. Dolore nostrud ut cupidatat incididunt exercitation magna reprehenderit veniam eiusmod in consectetur quis. Quis velit laborum minim nisi dolor ea minim ullamco irure laborum do cillum Lorem eu eiusmod.</p>
+					<p>Cillum id Lorem nulla consectetur ullamco proident aliqua nisi velit laborum. Excepteur adipisicing pariatur laboris ea cillum irure laboris ut in elit est. Qui ea sit amet ullamco adipisicing sint occaecat sit cillum nisi voluptate ad dolore qui.</p>
+					<p>Do mollit laborum nisi eu dolor velit elit occaecat officia. Cillum irure et excepteur sunt quis commodo aute velit tempor sit eiusmod incididunt occaecat cupidatat Lorem sint enim. Do ipsum aliqua ea elit et amet pariatur commodo laboris duis minim est incididunt.</p>
+					<p>Consequat labore eu fugiat veniam ad nulla dolore est. Voluptate non quis in sint adipisicing tempor esse velit voluptate ea. Laboris ut nisi excepteur veniam adipisicing velit sit anim fugiat dolore.</p>
+				</div>
+			</div>
+			<div ng-show="find">
+				<h2>Find Friends</h2>
+				<div>
+					<p>Tempor elit in irure pariatur est ut dolor culpa consequat exercitation adipisicing. Dolore proident irure voluptate do velit consequat deserunt proident irure fugiat deserunt anim incididunt nulla eiusmod ullamco. Excepteur exercitation duis ad esse cillum nostrud quis officia cupidatat et minim enim enim irure. Laborum minim labore aliqua esse sunt deserunt aute laborum.</p>
+				</div>
+			</div>
+			<div ng-show="update">
+				<h2>Update Profile</h2>
+				<div>
+					<p>Adipisicing minim exercitation ipsum consequat irure id esse. Nostrud laboris ut laboris aliqua aute incididunt Lorem ut magna deserunt. Minim ea quis occaecat aliqua mollit laboris esse. Qui mollit proident veniam consectetur enim deserunt quis in consequat cillum velit eiusmod ea.</p>
+					<p>Est cupidatat laboris tempor dolor nisi aliquip cupidatat quis aliquip esse duis irure. Deserunt aute tempor velit irure ullamco proident adipisicing adipisicing dolore dolor. Veniam cillum laborum reprehenderit non minim reprehenderit fugiat culpa id in aliqua dolor et dolor velit. Velit cupidatat magna veniam veniam eu id sunt proident elit fugiat aute. Aliquip sunt laboris sunt nulla commodo sunt do mollit mollit veniam occaecat officia ullamco. Anim Lorem irure exercitation ad anim officia magna aliquip mollit occaecat nisi reprehenderit occaecat in elit.</p>
+					<p>Aliquip ut exercitation voluptate excepteur ipsum dolor dolore. Amet magna enim ut ex minim id consectetur esse enim aute ut. Sit mollit dolore fugiat occaecat deserunt ut consequat aute culpa et non id aliqua laborum aliqua id. Magna elit elit aliquip ad culpa et eiusmod nisi consectetur quis occaecat incididunt laboris laborum laborum. Ad incididunt sunt do proident cillum cillum commodo deserunt laborum enim incididunt adipisicing enim ut ullamco sint. Excepteur est aliquip ea duis culpa sit officia aliqua mollit voluptate fugiat id deserunt non aliquip nisi. Consectetur non esse velit consequat nisi occaecat nulla.</p>
+					<p>Incididunt labore est ut officia ut velit voluptate velit. Voluptate excepteur amet ut ea ad magna quis eiusmod. Amet irure eiusmod ipsum quis esse ea incididunt irure cillum nulla tempor cillum occaecat enim consequat. Ex anim ex aliqua sit ullamco incididunt veniam adipisicing voluptate aute reprehenderit. Eu non non quis fugiat officia proident aute reprehenderit minim excepteur ullamco et fugiat esse enim aliquip.</p>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<nav class="bottom-nav">
+				<div class="navItem" ng-class="{selected: view}" ng-click="togglePage('view')">View Friends</div>
+				<div class="navItem" ng-class="{selected: find}" ng-click="togglePage('find')">Find Friends</div>
+				<div class="navItem" ng-class="{selected: update}" ng-click="togglePage('update')">Update Profile</div>
+			</nav>
+		</footer>
+		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/mainCtrl.js"></script>
+	</body>
+	<!--
+project wants you to create a new user on initial load
+show a page where you are shown new users
+when filtering, it should show their profile on the page
+when seeing the user profile, you can see add/remove
+create a personal profile to see friends
+
+use ng-show and ng-hide to make divs show up and disappear-->
+
+</html>

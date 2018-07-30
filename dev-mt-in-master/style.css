@@ -1,0 +1,84 @@
+font-family: 'Lora', serif;
+font-family: 'Open Sans', sans-serif;
+h1 {
+  font-family: 'Lora', serif;
+  font-size: 38.4px;
+  line-height: 46px;
+  color: #272727;
+}
+
+h2 {
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  line-height: 34px;
+  color: #000000;
+}
+
+h3 {
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  line-height: 24px;
+  color: #272727;
+}
+
+h4 {
+  font-family: 'Lora', serif;
+  font-size: 19.8px;
+  line-height: 24px;
+  color: #232323;
+}
+
+h6 {
+  font-family: 'Lora', serif;
+  font-size: 16.8px;
+  line-height: 21px;
+  color: #232323;
+}
+
+header {
+  font-family: 'Lora', serif;
+  font-size: 16.8px;
+  line-height: 21px;
+  color: #272727;
+  border-bottom: 1px solid #ECECEC;
+  width: 100%;
+}
+
+main {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10.2px;
+  line-height: 14px;
+  color: #000000;
+}
+
+footer {
+  clear: both;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+}
+
+.bottom-nav {
+  border-top: 1px solid #9A9A9A;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navItem {
+  cursor: pointer;
+}
+
+.selected {
+  border-bottom: 2px solid #74FDF2;
+}
+
+.signUp {
+  clear: both;
+  padding: 10px;
+}

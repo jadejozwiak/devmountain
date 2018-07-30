@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app = "myChats">
+  <head>
+    <meta charset="utf-8">
+    <title>Cookie Chat With Friends</title>
+    <link rel="stylesheet" href="/styles/mainStyle.css" media="screen" title="no title">
+  </head>
+  <body ng-controller = "mainCtrl">
+    <h3>{{chatAppName}}</h3>
+
+    <div class = "message-pane">
+      <form ng-submit = "setScreenname(screenname)">
+        <input type = "text" placeholder = "Select Your Screenname" ng-model="screenname">
+        <button type="submit"> Set Screenname </button>
+      </form>
+      <form ng-submit="addChat(newChat)">
+      <input type="text" placeholder="Say the things" ng-model="newChat.message">
+      <button type="submit"> sayStuff </button>
+
+    </form>
+    <button class = "delete" ng-click ="deleteChats()"> Armeggeddon </button>
+      <div class = "messages">
+      <div class = "message" ng-repeat = "chat in chats">
+        <span class = "screenname">{{chat.screenname}}</span>
+        <span class = "message">{{chat.message}} </span>
+      </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/mainCtrl.js" charset="utf-8"></script>
+    <script src="js/mainSrvc.js" charset="utf-8"></script>
+  </body>
+</html>

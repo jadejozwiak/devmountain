@@ -1,0 +1,20 @@
+<html ng-app="arrayApp">
+
+	<head>
+		<link rel="stylesheet" href="style.css"></link>
+	</head>
+
+	<body ng-controller="arrayController"> {{test}}
+		<div ng-repeat="person in theData" class="row">
+			<div class="personData">{{person.name}}</div>
+			<div class="personData">{{person.email}}</div>
+			<div class="personData">{{person.dateEmployed}}</div>
+			<div class="personData">{{person.phone}}</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script src="app.js"></script>
+		<script src="controller.js"></script>
+		<script src="service.js"></script>
+	</body>
+
+</html>

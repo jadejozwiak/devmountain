@@ -1,0 +1,26 @@
+{
+  "name": "user-profiles",
+  "version": "1.0.0",
+  "description": "This project is to display a user profile page that tracks the current user on the back-end and displays information specific to that user",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/absolutelyJustine/user-profiles.git"
+  },
+  "author": "absolutelyJustine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/absolutelyJustine/user-profiles/issues"
+  },
+  "homepage": "https://github.com/absolutelyJustine/user-profiles#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "express-session": "^1.15.1"
+  }
+}

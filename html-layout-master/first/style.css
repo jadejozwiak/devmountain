@@ -1,0 +1,26 @@
+header {
+  background-color: #3b3b3b;
+  height: 15%;
+  width: 100%;
+}
+footer {
+  background-color: black;
+  height:10%;
+  width: 75%;
+  margin-left: auto;
+  margin-right:auto;
+}
+body {
+  margin:0;
+}
+.container{
+  background-color: #DDDDDD;
+  height: 100vh;
+}
+.main {
+  background-color: white;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75%;
+}
